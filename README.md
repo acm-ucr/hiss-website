@@ -11,7 +11,7 @@
 
 ## Figma
 
-[ACM UCR Website Template Figma Design File](https://www.figma.com/)
+[ACM UCR Website Template Figma Design File](https://www.figma.com/file/Rk8S9muvP1HL4PkVHU25gj/HISS?type=design&node-id=0-1&mode=design&t=BQDMzYmOcO0oUDKh-0)
 
 ## Node.js
 
