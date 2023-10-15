@@ -14,7 +14,7 @@ module.exports = {
         hiss: {
           blue: "#4EBEE0",
           purple: "#C6B1FB",
-          orange: "#FFC875",
+          yellow: "#FFC875",
           black: "#303030",
         },
       },
