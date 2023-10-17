@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        xxs: "0.5rem",
+      },
       fontFamily: {
         poppins: ["var(--font-poppins)"],
       },
