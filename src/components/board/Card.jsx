@@ -7,7 +7,7 @@ const Card = (props) => {
     <div className="cardContainer font-poppins m-4 bg-white w-72 h-96 rounded-md shadow flex flex-col items-center justify-center">
       <div className="contentContainer w-56 h-5/6 flex flex-col justify-center items-start">
         <div className="photoContainer bg-gray-500 w-full h-2/3 rounded-lg">
-          <img src=".../public/images/judge.png" alt="" />
+          {/* insert pic */}
         </div>
 
         <div className="textContainer">
