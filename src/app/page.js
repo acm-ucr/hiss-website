@@ -1,16 +1,7 @@
-import Card from "../components/board/Card";
+// import Card from "../components/board/Card";
 
 const Home = () => {
-  return (
-    <Card
-      name="adfafasdfasdfasfdasfdasfdafsfs"
-      title="Developer"
-      year="1st year"
-      major="Comp Eng"
-      pronouns="He/Him"
-      linkedIn="https://youtube.com"
-    />
-  );
+  return <>HISS Website</>;
 };
 
 export default Home;
