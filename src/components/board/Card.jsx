@@ -35,7 +35,7 @@ const Card = (props) => {
             </a>
 
             <a href={email}>
-              <GrMail className="inline h-6 w-6 ml-2 mb-1 rounded-xl" />
+              <GrMail className="inline h-6 w-6 ml-2 mb-1 rounded-xl text-hiss-purple" />
             </a>
           </div>
 
