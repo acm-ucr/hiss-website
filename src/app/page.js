@@ -1,7 +1,5 @@
-import Title from "@/components/Title";
-
 const Home = () => {
-  return <Title title="Meet the Team" />;
+  return <>HISS Website</>;
 };
 
 export default Home;
