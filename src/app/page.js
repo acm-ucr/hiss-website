@@ -1,5 +1,11 @@
+import Card from "@/components/about/Card";
+
 const Home = () => {
-  return <>HISS Website</>;
+  return (
+    <div className="bg-white w-full flex flex-col justify-center items-center h-screen">
+      <Card />
+    </div>
+  );
 };
 
 export default Home;
