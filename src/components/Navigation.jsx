@@ -40,10 +40,12 @@ const Navigation = () => {
               key={index}
               href={item.link}
               pathname={item.name}
-              className={`hover:cursor-pointer mt-2 py-1 px-3 !text-white !font-small whitespace-nowrap relative group duration-300 `}
+              className={`hover:cursor-pointer mt-3 py-1 px-3 !text-white !font-small whitespace-nowrap relative group duration-300 `}
             >
               {item.name}
-              <span className="absolute bottom-0 left-8 rounded-full h-1 bg-hiss-yellow transition-all transform origin-left group-hover:w-8"></span>
+              <div className="flex flex-col items-center">
+                <span className="h-1 rounded-full bg-hiss-yellow transition-all transform origin-left group-hover:w-8"></span>
+              </div>
             </Nav.Link>
           ))}
         </Nav>
