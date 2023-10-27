@@ -15,12 +15,7 @@ const Navigation = () => {
       className="w-full m-0 h-[8vh] p-0 flex px-3 py-0 bg-gradient-to-r from-hiss-blue to-hiss-purple justify-between items-center backdrop-blur-md"
     >
       <Navbar.Brand className="p-0">
-        <Link
-          className="p-0 no-underline flex items-center gap-2"
-          href={{
-            pathname: "/",
-          }}
-        >
+        <Link className="p-0 no-underline flex items-center gap-2" href="/">
           <div className="flex flex-col items-start">
             <div className="px-1 text-white text-3xl font-bold">HISS</div>
           </div>
@@ -40,7 +35,7 @@ const Navigation = () => {
               key={index}
               href={item.link}
               pathname={item.name}
-              className={`hover:cursor-pointer mt-3 py-1 px-3 !text-white !font-small whitespace-nowrap relative group duration-300 `}
+              className="hover:cursor-pointer mt-3 py-1 px-3 !text-white !font-small whitespace-nowrap relative group duration-300 "
             >
               {item.name}
               <div className="flex flex-col items-center">
