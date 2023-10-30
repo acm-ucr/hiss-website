@@ -1,5 +1,7 @@
+import Cards from "@/components/about/Cards";
+
 const Home = () => {
-  return <>HISS Website</>;
+  return <Cards />;
 };
 
 export default Home;
