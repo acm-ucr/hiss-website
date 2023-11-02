@@ -1,5 +1,7 @@
+import Footer from "@/components/Footer";
+
 const Home = () => {
-  return <>HISS Website</>;
+  return <Footer />;
 };
 
 export default Home;
