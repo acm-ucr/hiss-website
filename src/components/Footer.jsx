@@ -8,13 +8,13 @@ const Footer = () => {
         HISS
         <div className="w-full max-h-full flex space-x-4 place-content-end ">
           <a href="https://www.google.com/" className="text-white">
-          {<FaInstagram className="text-2xl" />}{" "}
+            {<FaInstagram className="text-2xl" />}{" "}
           </a>
           <a href="https://www.google.com/" className="text-white">
-          {<FaDiscord className="text-2xl" />} 
+            {<FaDiscord className="text-2xl" />}
           </a>
           <a href="https://www.google.com/" className="text-white">
-          {<IoMail className="text-2xl" />}
+            {<IoMail className="text-2xl" />}
           </a>
         </div>
       </div>
