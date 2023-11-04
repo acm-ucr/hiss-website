@@ -5,7 +5,7 @@ import Header from "../Header";
 
 const Cards = () => {
   return (
-    <div className="bg-gray-200 rounded-lg flex flex-col p-8 w-5/12 space-y-20">
+    <div className="rounded-lg flex flex-col p-8 w-5/12 space-y-20">
       <Header text={"Join Us"} className="" />
       <div className="flex flex-row items-center justify-evenly">
         <Card
