@@ -3,7 +3,7 @@ import Image from "next/image";
 import chart from "../../../public/assets/chart.svg";
 const Landing = () => {
   return (
-    <div className="w-full relative top-40 flex h-[50vh] md:h-screen">
+    <div className="w-full relative top-40 flex justify-center items-end h-[50vh] md:h-screen">
       <div className="h-auto flex gap-0 relative left-1/4">
         <div className="flex-2 relative right-32">
           <Image src={chart} className="h-1/2 w-auto m-0" alt="chart" />
