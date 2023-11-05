@@ -14,7 +14,7 @@ const Landing = () => {
               <p className="text-5xl py-1.5 font-bold text-transparent bg-clip-text bg-gradient-to-r from-hiss-blue to-hiss-purple">
                 Highlander Statistics Society
               </p>
-              <p className="mt-0 my-0 text-white px-0 py-2.5 font-bold text-center text-3xl h-14 w-[83vh] bg-gradient-to-r from-hiss-blue to-hiss-purple rounded-full">
+              <p className="mt-0 my-0 text-white px-0 py-2.5 font-bold text-center text-3xl h-14 w-4/5 bg-gradient-to-r from-hiss-blue to-hiss-purple rounded-full">
                 at Unversity of Calirfornia Riverside
               </p>
               <p className="my-1 py-1 h-10 w-6/12">
