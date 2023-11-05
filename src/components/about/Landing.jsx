@@ -9,7 +9,7 @@ const Landing = () => {
           <div className="flex w-1/2 justify-end items-center">
             <Image src={chart} className="h-full w-auto m-0" alt="chart" />
           </div>
-          <div className="px-1 flex w-full justify-center items-start">
+          <div className="px-2 flex w-full justify-center items-start">
             <div className="flex flex-col w-3/4 lg:w-auto">
               <p className="text-5xl py-1 font-bold text-transparent bg-clip-text bg-gradient-to-r from-hiss-blue to-hiss-purple">
                 Highlander Statistics Society
