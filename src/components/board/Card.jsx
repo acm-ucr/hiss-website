@@ -1,15 +1,23 @@
 import React from "react";
 import Image from "next/image";
-import Judge from "../../../public/images/judge.png";
 import { GrMail } from "react-icons/gr";
 import { FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 
-const Card = ({ name, title, year, major, pronouns, linkedIn, email }) => {
+const Card = ({
+  name,
+  position,
+  year,
+  major,
+  pronouns,
+  linkedIn,
+  email,
+  image,
+}) => {
   return (
     <div className="font-poppins m-4 p-4 bg-white w-64 h-96 rounded-3xl shadow flex flex-col items-start justify-center">
       <Image
-        src={Judge}
+        src={image}
         alt="Picture of the author"
         className="w-full h-2/3 rounded-2xl"
       />
@@ -19,7 +27,7 @@ const Card = ({ name, title, year, major, pronouns, linkedIn, email }) => {
           {name}
         </div>
 
-        <div className="-mt-0 text-2xl font-light">{title}</div>
+        <div className="-mt-0 text-2xl font-light">{position}</div>
 
         <Link href={linkedIn}>
           <FaLinkedinIn className="inline h-6 w-6 ml-2 mb-1 text-hiss-purple" />
