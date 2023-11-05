@@ -4,7 +4,9 @@ const Home = () => {
   return (
     <>
       <Title title={"Meet The Team"} />
-      <Cards />
+      <div className="flex flex-col justify-center items-center">
+        <Cards />
+      </div>
     </>
   );
 };
