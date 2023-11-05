@@ -4,7 +4,7 @@ import Card from "../board/Card.jsx";
 
 const Cards = () => {
   return (
-    <div className="w-7/12">
+    <div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {board.map((member, index) => (
           <Card

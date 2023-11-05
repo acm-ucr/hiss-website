@@ -1,10 +1,14 @@
 import Title from "@/components/Title";
-import Cards from "@/components/board/Cards";
+import Events from "@/components/Events";
+import Calendar from "@/components/calendar/Calendar";
 const Home = () => {
   return (
     <>
-      <Title title={"Meet The Team"} />
-      <Cards />
+      <Title title={"Events"} />
+      <div className="flex flex-col justify-center items-center">
+        <Events />
+        <Calendar />
+      </div>
     </>
   );
 };
