@@ -14,12 +14,12 @@ const CalendarEvent = ({ events }) => {
   const [date, setDate] = useState(new Date());
 
   return (
-    <section className="w-full flex justify-center items-center flex-col mt-[2vh]">
-      <div className="w-10/12 flex justify-center items-center">
-        <div className="h-[80vh] w-full relative mb-24">
+    <section className="w-full flex justify-center items-center flex-col mt-[2vh] ">
+      <div className="w-10/12 flex justify-center items-center ">
+        <div className="h-[80vh] w-full relative mb-24 rounded-lg">
           <Calendar
             date={date}
-            className="font-playfair w-full m-0 p-0 text-md md:text-2xl"
+            className=" w-full m-0 p-0 text-md md:text-2xl rounded-b-xl overflow-hidden  "
             allDayAccessor="allDay"
             showAllEvents={true}
             events={events}
