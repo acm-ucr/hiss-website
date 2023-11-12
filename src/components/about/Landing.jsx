@@ -3,7 +3,7 @@ import Image from "next/image";
 import chart from "../../../public/assets/chart.svg";
 const Landing = () => {
   return (
-    <div className="w-full flex justify-center items-end h-[70vh]">
+    <div className="w-full flex justify-center items-center h-[70vh]">
       <div className="flex-row w-auto">
         <div className="h-auto flex gap-8 ">
           <div className="flex w-1/2 justify-end items-center">
@@ -15,7 +15,7 @@ const Landing = () => {
                 Highlander Statistics Society
               </p>
               <p className="mt-0 my-0 text-white px-0 py-2.5 font-bold text-center text-3xl h-14 w-4/5 bg-gradient-to-r from-hiss-blue to-hiss-purple rounded-full">
-                at Unversity of Calirfornia Riverside
+                at Unversity of California Riverside
               </p>
               <p className="my-1 py-1 h-10 w-6/12">
                 Lorem ipsum dolor sit amet, consectetur hadipiscing elit, sed do
