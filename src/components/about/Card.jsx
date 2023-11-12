@@ -11,8 +11,8 @@ const Card = ({ text, icon, link }) => {
           {text}
         </p>
       </div>
-      <button className="w-3/5 border-1 border-black bg-white rounded-full flex items-center justify-center mt-6">
-        <Link href={link} className="text-black no-underline">
+      <button className="w-3/5 h-10 border-1 border-black hover:bg-hiss-blue active:bg-hiss-black rounded-full flex items-center justify-center mt-6">
+        <Link href={link} className="text-black no-underline ${button_color}">
           Join
         </Link>
       </button>
