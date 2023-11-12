@@ -12,7 +12,7 @@ const Navigation = () => {
       collapseOnSelect
       expand="md"
       fixed="top"
-      className="w-full m-0 h-[8vh] p-0 flex px-3 py-0 bg-gradient-to-r from-hiss-blue to-hiss-purple justify-between items-center backdrop-blur-md"
+      className="w-full m-0 md:h-[8vh] p-0 flex px-3 py-0 bg-gradient-to-r from-hiss-blue to-hiss-purple justify-between items-center backdrop-blur-md"
     >
       <Navbar.Brand className="p-0">
         <Link className="p-0 no-underline flex items-center gap-2" href="/">
