@@ -6,11 +6,11 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import CustomToolbar from "./CustomToolbar.jsx";
 import CustomEvent from "./CustomEvents.jsx";
 import CustomHeader from "./CustomHeader.jsx";
-
+import Modal from "./Modal.jsx";
 const localizer = momentLocalizer(moment);
 
 const CalendarEvent = ({ events }) => {
-  // const [event, setEvent] = useState(null);
+  const [event, setEvent] = useState(null);
   const [date, setDate] = useState(new Date());
 
   return (
@@ -58,7 +58,7 @@ const CalendarEvent = ({ events }) => {
             }}
           />
         </div>
-        {/* {event && <Modal event={event} setEvent={setEvent} />} */}
+        {event && <Modal event={event} setEvent={setEvent} />}
       </div>
     </section>
   );

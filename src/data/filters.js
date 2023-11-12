@@ -9,7 +9,7 @@ const filters = [
   },
   {
     topic: "Social",
-    color: "bg-hiss-blue text-white",
+    color: "bg-hiss-yellow text-white",
   },
 ];
 

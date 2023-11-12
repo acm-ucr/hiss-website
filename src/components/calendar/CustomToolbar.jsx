@@ -28,7 +28,6 @@ const CustomToolbar = (event) => {
           className="hover:cursor-pointer text-hiss-blue text-4xl"
         />
         <p className="m-0 text-transparent bg-clip-text bg-gradient-to-r from-hiss-blue to-hiss-purple  text-4xl">
-          {" "}
           {monthNames[event.date.getMonth()]}
           <span> {event.date.getFullYear()}</span>
         </p>
