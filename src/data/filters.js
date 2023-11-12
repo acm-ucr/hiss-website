@@ -5,7 +5,7 @@ const filters = [
   },
   {
     topic: "Other Meeting",
-    color: "bg-hiss-blue text-white",
+    color: "bg-hiss-yellow text-white",
   },
   {
     topic: "Social",
