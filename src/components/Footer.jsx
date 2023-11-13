@@ -7,13 +7,22 @@ const Footer = () => {
       <div className="flex items-center font-poppins font-bold text-3xl text-white">
         HISS
         <div className="w-full max-h-full flex space-x-4 place-content-end ">
-          <a href="https://www.google.com/" className="text-white">
+          <a
+            href="https://www.google.com/"
+            className="text-white hover:scale-110"
+          >
             {<FaInstagram className="text-2xl" />}{" "}
           </a>
-          <a href="https://www.google.com/" className="text-white">
+          <a
+            href="https://www.google.com/"
+            className="text-white hover:scale-110"
+          >
             {<FaDiscord className="text-2xl" />}
           </a>
-          <a href="https://www.google.com/" className="text-white">
+          <a
+            href="https://www.google.com/"
+            className="text-white hover:scale-110"
+          >
             {<IoMail className="text-2xl" />}
           </a>
         </div>
