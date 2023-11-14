@@ -17,7 +17,7 @@ const Landing = () => {
               <p className="sm:m-0 mr-24 text-white px-0 py-2.5 font-bold text-center sm:text-3xl sm:h-14 sm:w-4/5 w-80 bg-gradient-to-r from-hiss-blue to-hiss-purple rounded-full">
                 at Unversity of California Riverside
               </p>
-              <p className="sm:my-1 py-1 mb-10 h-10 sm:w-6/12 w-full">
+              <p className="sm:my-1 py-1 h-10 sm:w-6/12 w-full">
                 Lorem ipsum dolor sit amet, consectetur hadipiscing elit, sed do
                 eiusmod tempor incididunt ut labore
               </p>
