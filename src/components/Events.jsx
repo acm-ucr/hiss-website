@@ -1,10 +1,11 @@
 import Header from "../components/Header.jsx";
 import Event from "../components/Event.jsx";
 import eventsData from "../data/events.js";
+import Button from "./about/Button.jsx";
 
 const Events = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center ">
       <Header text="Upcoming Events" />
       <div className="space-y-7 mt-16 mb-16">
         {eventsData.map((event) => (
@@ -29,6 +30,7 @@ const Events = () => {
           />
         ))}
       </div>
+      <Button text={"See Calendar"} />
     </div>
   );
 };
