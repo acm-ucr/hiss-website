@@ -5,7 +5,7 @@ import About from "../../../public/images/about.png";
 
 const HISS = () => {
   return (
-    <div className="flex-col items-center justify-center inline-flex gap-10 w-1/2">
+    <div className="flex-col items-center justify-center inline-flex gap-10 w-1/2 ">
       <Header text="About HISS" />
       <p>
         The Highlander Statistics Society (HiSS) is a student organization whose
