@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import chart from "../../../public/assets/chart.svg";
+import Button from "../about/Button.jsx";
 const Landing = () => {
   return (
     <div className="w-full flex justify-center items-center h-[70vh]">
@@ -24,6 +25,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
+        <Button text={"JOIN US"} />
       </div>
     </div>
   );

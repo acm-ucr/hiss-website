@@ -1,6 +1,7 @@
 import Header from "../components/Header.jsx";
 import Event from "../components/Event.jsx";
 import eventsData from "../data/events.js";
+import Button from "./about/Button.jsx";
 
 const Events = () => {
   return (
@@ -29,6 +30,7 @@ const Events = () => {
           />
         ))}
       </div>
+      <Button text={"See Calendar"} />
     </div>
   );
 };
