@@ -27,7 +27,7 @@ const Navigation = () => {
       >
         <FaBars className=" text-hiss-yellow text-xl" />
       </Navbar.Toggle>
-      <Navbar.Collapse className="items-center justify-center">
+      <Navbar.Collapse className="items-center justify-end">
         <Nav className="mb-2 w-2/7 no-underline text-2xl flex items-center">
           {items.map((item, index) => (
             <Nav.Link
@@ -43,15 +43,15 @@ const Navigation = () => {
               </div>
             </Nav.Link>
           ))}
+          <Nav.Link
+            href="/join"
+            as={Link}
+            className="mt-2.5 mr-2 py-1 px-2 !text-white !text-2xl !font-bold drop-shadow-md"
+          >
+            JOIN
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
-      <Nav.Link
-        href="/join"
-        as={Link}
-        className="mt-0 py-1 px-3 !text-white !text-2xl !font-bold"
-      >
-        JOIN
-      </Nav.Link>
     </Navbar>
   );
 };
