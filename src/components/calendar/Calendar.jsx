@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
@@ -7,11 +7,28 @@ import CustomToolbar from "./CustomToolbar.jsx";
 import CustomEvent from "./CustomEvents.jsx";
 import CustomHeader from "./CustomHeader.jsx";
 import Modal from "./Modal.jsx";
+import axios from "axios";
 const localizer = momentLocalizer(moment);
 
 const CalendarEvent = ({ events }) => {
   const [event, setEvent] = useState(null);
   const [date, setDate] = useState(new Date());
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_CALENDAR_ID}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&timeMin=2023-10-08T21:58:44.000Z`
+        );
+        // Assuming the response.data contains the event list
+        setEvent(response.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <section className="w-full flex justify-center items-center flex-col mt-[2vh] ">
