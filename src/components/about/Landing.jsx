@@ -25,7 +25,7 @@ const Landing = () => {
                   HiSS is the go-to club for statistics enthusiasts at UCR,
                   fostering a dynamic community through workshops and socials.
                 </p>
-                <div className="flex flex-col items-end mt-28 mr-[170px]">
+                <div className="flex flex-col sm:items-end items-center sm:mt-28 mt-16 mb-20 sm:mr-[170px]">
                   <Button text={"JOIN US"} />
                 </div>
               </div>
