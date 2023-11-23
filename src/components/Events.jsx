@@ -5,7 +5,7 @@ import Button from "./about/Button.jsx";
 
 const Events = () => {
   return (
-    <div className="flex flex-col items-center justify-center ">
+    <div className="flex flex-col items-center justify-center">
       <Header text="Upcoming Events" />
       <div className="space-y-7 mt-16 mb-16">
         {eventsData.map((event) => (
@@ -30,7 +30,7 @@ const Events = () => {
           />
         ))}
       </div>
-      <Button text={"See Calendar"} />
+      <Button text={"See Calendar"} link={"events"} />
     </div>
   );
 };
