@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import { Poppins } from "next/font/google";
 
 export const metadata = {
-  title: "HISS at UCR",
+  title: "HiSS at UCR",
   description: "Highlander Statistics Society Official Website",
 };
 
