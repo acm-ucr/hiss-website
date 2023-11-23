@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <Title title={"Events"} />
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center gap-20">
         <Events />
         <Calendar />
       </div>
