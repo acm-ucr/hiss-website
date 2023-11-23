@@ -5,22 +5,22 @@ const Footer = () => {
   return (
     <div className="bg-gradient-to-r from-hiss-blue to-hiss-purple w-full p-4">
       <div className="flex items-center font-poppins font-bold text-3xl text-white">
-        HISS
+        HiSS
         <div className="w-full max-h-full flex space-x-4 place-content-end ">
           <a
-            href="https://www.google.com/"
+            href="https://www.instagram.com/highlanderstatistics/"
             className="text-white hover:scale-110"
           >
             {<FaInstagram className="text-2xl" />}{" "}
           </a>
           <a
-            href="https://www.google.com/"
+            href="https://discord.gg/NrsJjtAQAE"
             className="text-white hover:scale-110"
           >
             {<FaDiscord className="text-2xl" />}
           </a>
           <a
-            href="https://www.google.com/"
+            href="mailto:highlanderstat@ucr.edu"
             className="text-white hover:scale-110"
           >
             {<IoMail className="text-2xl" />}

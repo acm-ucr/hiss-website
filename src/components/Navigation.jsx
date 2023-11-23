@@ -17,7 +17,7 @@ const Navigation = () => {
       <Navbar.Brand className="p-0">
         <Link className="p-0 no-underline flex items-center gap-2" href="/">
           <div className="flex flex-col items-start">
-            <div className="px-1 text-white text-3xl font-bold">HISS</div>
+            <div className="px-1 text-white text-3xl font-bold">HiSS</div>
           </div>
         </Link>
       </Navbar.Brand>
@@ -44,7 +44,7 @@ const Navigation = () => {
             </Nav.Link>
           ))}
           <Nav.Link
-            href="/join"
+            href="https://discord.gg/NrsJjtAQAE"
             as={Link}
             className="mt-2.5 mr-2 py-1 px-2 !text-white !text-2xl !font-bold drop-shadow-md"
           >

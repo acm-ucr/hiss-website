@@ -3,10 +3,10 @@ import Header from "../Header.jsx"; // previously was: src/components/Header
 import Image from "next/image";
 import About from "../../../public/images/about.png";
 
-const HISS = () => {
+const HiSS = () => {
   return (
-    <div className="flex-col items-center justify-center inline-flex gap-10 w-1/2 ">
-      <Header text="About HISS" />
+    <div className="flex-col items-center justify-center inline-flex gap-10 w-1/2 text-xl">
+      <Header text="About HiSS" />
       <p>
         The Highlander Statistics Society (HiSS) is a student organization whose
         purpose is to form unity and friendship among students majoring or
@@ -16,7 +16,7 @@ const HISS = () => {
         events, HiSS strives to build a strong community among its club members
         in addition to encouraging involvement and success in statistics.
       </p>
-      <Image className="rounded-full w-5/6 " src={About} alt="HISS Image" />
+      <Image className="rounded-full w-5/6 " src={About} alt="HiSS Image" />
       <p>
         The Highlander Statistics Society (HiSS) aims to bring together students
         who are interested in statistics across various disciplines. The club
@@ -31,4 +31,4 @@ const HISS = () => {
   );
 };
 
-export default HISS;
+export default HiSS;

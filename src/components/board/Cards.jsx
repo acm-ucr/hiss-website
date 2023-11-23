@@ -5,7 +5,7 @@ import Card from "../board/Card.jsx";
 const Cards = () => {
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {board.map((member, index) => (
           <Card
             key={index}

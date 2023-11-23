@@ -30,7 +30,7 @@ const Events = () => {
           />
         ))}
       </div>
-      <Button text={"See Calendar"} />
+      <Button text={"See Calendar"} link={"events"} />
     </div>
   );
 };

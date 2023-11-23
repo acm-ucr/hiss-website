@@ -18,8 +18,8 @@ const Card = ({
     <div className="font-poppins m-4 p-4 bg-white w-64 h-96 rounded-3xl shadow flex flex-col items-start justify-center">
       <Image
         src={image}
-        alt="Picture of the author"
-        className="w-full h-2/3 rounded-2xl"
+        alt="Picture of the HiSS Board Member"
+        className="w-full rounded-2xl object-cover"
       />
 
       <div>

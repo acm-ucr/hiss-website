@@ -1,4 +1,4 @@
-# HISS UCR Website
+# HiSS UCR Website
 
 ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -11,7 +11,7 @@
 
 ## Figma
 
-[UCR HISS Official Website Figma Design File](https://www.figma.com/file/Rk8S9muvP1HL4PkVHU25gj/HISS?type=design&node-id=0-1&mode=design&t=BQDMzYmOcO0oUDKh-0)
+[UCR HiSS Official Website Figma Design File](https://www.figma.com/file/Rk8S9muvP1HL4PkVHU25gj/HISS?type=design&node-id=0-1&mode=design&t=BQDMzYmOcO0oUDKh-0)
 
 ## Node.js
 
