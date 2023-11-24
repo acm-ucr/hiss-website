@@ -23,11 +23,11 @@ const Card = ({
       />
 
       <div>
-        <div className="mt-2 font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-hiss-blue to-hiss-purple">
+        <div className="mt-2 font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-hiss-blue to-hiss-purple">
           {name}
         </div>
 
-        <div className="-mt-0 text-2xl font-light">{position}</div>
+        <div className="-mt-0 text-xl font-light">{position}</div>
 
         <Link href={linkedIn}>
           <FaLinkedinIn className="inline h-6 w-6 ml-2 mb-1 text-hiss-purple hover:scale-110" />
