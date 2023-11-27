@@ -1,6 +1,6 @@
-const CustomEvent = ({ start, summary, allDay }) => {
+const CustomEvent = ({ start, summary, allDay, color }) => {
   return (
-    <div className={`font-playfair ${event.color} text-sm flex justify-start`}>
+    <div className={`font-playfair ${color} text-sm flex justify-start`}>
       <p className="whitespace-nowrap m-0">
         {!allDay &&
           new Date(start).toLocaleTimeString(navigator.language, {
