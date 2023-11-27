@@ -15,19 +15,24 @@ const CalendarEvent = ({ events }) => {
   const [date, setDate] = useState(new Date());
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_CALENDAR_ID}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&timeMin=2023-10-08T21:58:44.000Z`
-        );
-        // Assuming the response.data contains the event list
-        setEvent(response.data);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
+    axios
+      .get(
+        `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`
+      )
+      .then((response) => {
+        const items = response.data.items.map((item) => {
+          item.start = new Date(item.start.dateTime);
+          item.end = new Date(item.end.dateTime);
+          item.color =
+            LABELS[
+              item.description.split("\n")[1].split(": ")[1].toLowerCase()
+            ].background;
+          item.hidden = false;
 
-    fetchData();
+          return item;
+        });
+        setEvent(items);
+      });
   }, []);
 
   return (
@@ -46,12 +51,13 @@ const CalendarEvent = ({ events }) => {
             components={{
               event: CustomEvent,
               toolbar: CustomToolbar,
+
               month: {
                 header: CustomHeader,
               },
             }}
             onNavigate={(newDate) => {
-              setDate(newDate);
+              return setDate(newDate);
             }}
             eventPropGetter={() => {
               return {
@@ -62,7 +68,7 @@ const CalendarEvent = ({ events }) => {
             dayPropGetter={(event) => {
               return {
                 className: `${
-                  new Date(event).toLocaleDateString() ==
+                  new Date(event).toLocaleDateString() ===
                   new Date().toLocaleDateString()
                     ? "!bg-opacity-10 !bg-hiss-black"
                     : "!bg-transparent"

@@ -2,39 +2,24 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import filters from "@/data/filters";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
-const monthNames = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
 
-const CustomToolbar = (event) => {
+const CustomToolbar = ({ onNavigate, date }) => {
   return (
     <div className="flex justify-center items-center w-full py-3 flex-col md:flex-row">
       <div className="md:w-1/3 flex gap-3 mb-2 md:mb-0 items-center">
         <AiOutlineArrowLeft
           onClick={() => {
-            console.log("hi");
-            event.onNavigate("PREV");
+            onNavigate("PREV");
           }}
           className="hover:cursor-pointer text-hiss-blue text-4xl"
         />
         <p className="m-0 text-transparent bg-clip-text bg-gradient-to-r from-hiss-blue to-hiss-purple  text-4xl">
-          {monthNames[event.date.getMonth()]}
-          <span> {event.date.getFullYear()}</span>
+          {date.toLocaleString("default", { month: "short" })}{" "}
+          {date.getFullYear()}
         </p>
 
         <AiOutlineArrowRight
-          onClick={() => event.onNavigate("NEXT")}
+          onClick={() => onNavigate("NEXT")}
           className="hover:cursor-pointer text-hiss-blue text-4xl"
         />
       </div>
@@ -42,7 +27,7 @@ const CustomToolbar = (event) => {
         {filters.map((filter, index) => (
           <Col key={index} xs={9} sm={3} className="p-1 ">
             <p
-              className={`${filter.color} whitespace-nowrap text-center text-sm md:text-base rounded-sm m-1 py-1 h-9`}
+              className={`${filter.styles} whitespace-nowrap text-center text-sm md:text-base rounded-sm m-1 py-1 h-9`}
             >
               {filter.topic}
             </p>
