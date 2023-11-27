@@ -49,11 +49,11 @@ const CalendarEvent = ({ events }) => {
             defaultView="month"
             views={["month"]}
             components={{
-              event: CustomEvent,
-              toolbar: CustomToolbar,
+              event: (props) => <CustomEvent {...props} />,
+              toolbar: (props) => <CustomToolbar {...props} />,
 
               month: {
-                header: CustomHeader,
+                header: (props) => <CustomHeader {...props} />,
               },
             }}
             onNavigate={(newDate) => {
