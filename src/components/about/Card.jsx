@@ -3,7 +3,7 @@ import React from "react";
 
 const Card = ({ text, icon, link }) => {
   return (
-    <div className="bg-white flex flex-col items-center pt-4 pb-12 w-28 sm:w-40 md:w-48 rounded-2xl border-1 shadow">
+    <div className="bg-white flex flex-col items-center pt-4 pb-12 w-28 sm:w-40 md:w-48 rounded-2xl border-1 shadow ">
       <div className="space-y-1 flex flex-col items-center justify-center">
         {icon}
         <div className="bg-hiss-yellow h-2 w-8 rounded-lg" />

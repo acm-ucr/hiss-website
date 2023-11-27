@@ -30,9 +30,7 @@ const Events = () => {
           />
         ))}
       </div>
-      <div className="hover:invert">
-        <Button text={"See Calendar"} />
-      </div>
+      <Button text={"See Calendar"} />
     </div>
   );
 };
