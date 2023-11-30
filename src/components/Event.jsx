@@ -12,10 +12,10 @@ const Event = ({
   description = "",
 }) => {
   return (
-    <div className="flex rounded-xl overflow-hidden shadow max-w-2xl">
-      <div className="p-4 text-white text-center w-1/4 bg-gradient-to-br from-hiss-blue to-hiss-purple">
-        <div className="text-4xl font-bold">{month}</div>
-        <div className="text-4xl font-semibold ">{day}</div>
+    <div className="flex rounded-xl overflow-hidden shadow w-11/12 md:w-1/2">
+      <div className="flex flex-col justify-center items-center text-white text-center w-1/4 bg-gradient-to-br from-hiss-blue to-hiss-purple">
+        <div className="text-3xl md:text-4xl font-bold">{month}</div>
+        <div className="text-3xl md:text-4xl font-semibold ">{day}</div>
         <div className="text-xl font-normal">{time}</div>
       </div>
 
@@ -30,7 +30,7 @@ const Event = ({
             </Link>
           )}
         </div>
-        <p className="w-full focus:outline-none resize-none font-normal mt-3">
+        <p className="w-full focus:outline-none resize-none font-normal text-sm md:text-base mt-3">
           {description}
         </p>
       </div>
