@@ -5,9 +5,9 @@ import Button from "./about/Button.jsx";
 
 const Events = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center w-full">
       <Header text="Upcoming Events" />
-      <div className="space-y-7 mt-16 mb-16">
+      <div className="space-y-7 mt-16 mb-16 justify-center items-center flex flex-col">
         {eventsData.map((event) => (
           <Event
             key={event.id}
