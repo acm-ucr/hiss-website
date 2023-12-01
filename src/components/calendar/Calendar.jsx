@@ -23,10 +23,10 @@ const CalendarEvent = ({ events }) => {
         const items = response.data.items.map((item) => {
           item.start = new Date(item.start.dateTime);
           item.end = new Date(item.end.dateTime);
-          item.color =
-            LABELS[
-              item.description.split("\n")[1].split(": ")[1].toLowerCase()
-            ].background;
+          // item.color =
+          //   LABELS[
+          //     item.description.split("\n")[1].split(": ")[1].toLowerCase()
+          //   ].background;
           item.hidden = false;
 
           return item;
