@@ -13,7 +13,7 @@ const Card = ({ text, icon, link }) => {
       </div>
       <button className="w-3/5 h-10 border-1 border-black hover:border-none hover:text-white hover:bg-hiss-purple rounded-full flex items-center justify-center mt-6">
         <Link href={link} className="text-inherit no-underline">
-          Join
+          link
         </Link>
       </button>
     </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = ({ text }) => {
   return (
-    <div className="flex-col items-center justify-center inline-flex">
+    <div className="flex-col items-center justify-center inline-flex gap-3">
       <p className="text-4xl p-1 font-bold text-transparent bg-clip-text bg-gradient-to-r from-hiss-blue to-hiss-purple">
         {text}
       </p>
