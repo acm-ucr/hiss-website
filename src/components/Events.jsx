@@ -31,6 +31,7 @@ const Events = () => {
         ))}
       </div>
       <Button text={"See Calendar"} link={"events"} />
+      <div className="mt-5"></div>
     </div>
   );
 };
