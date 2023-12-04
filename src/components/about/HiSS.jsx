@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Header.jsx"; // previously was: src/components/Header
 import Image from "next/image";
-import About from "../../../public/images/about.png";
+import About from "../../../public/images/about.webp";
 
 const HiSS = () => {
   return (
