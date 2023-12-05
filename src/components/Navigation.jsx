@@ -35,7 +35,7 @@ const Navigation = () => {
               key={index}
               href={item.link}
               pathname={item.name}
-              className="hover:cursor-pointer mt-3 py-1 px-3 !text-white !font-small whitespace-nowrap relative group duration-300 "
+              className="hover:cursor-pointer mt-3 py-1 px-3 !text-white whitespace-nowrap relative group duration-300 "
             >
               {item.name}
               <div className="flex flex-col items-center">

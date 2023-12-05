@@ -30,11 +30,11 @@ const Card = ({
         <div className="-mt-0 text-xl font-light">{position}</div>
 
         <Link href={linkedIn}>
-          <FaLinkedinIn className="inline h-6 w-6 ml-2 mb-1 text-hiss-purple hover:scale-110" />
+          <FaLinkedinIn className="inline h-6 w-6 ml-2 mb-1 text-hiss-purple hover:scale-110 duration-200" />
         </Link>
 
         <Link href={email}>
-          <GrMail className="inline h-6 w-6 ml-2 mb-1 rounded-xl text-hiss-purple hover:scale-110" />
+          <GrMail className="inline h-6 w-6 ml-2 mb-1 rounded-xl text-hiss-purple hover:scale-110 duration-200" />
         </Link>
 
         <div className="text-base">
