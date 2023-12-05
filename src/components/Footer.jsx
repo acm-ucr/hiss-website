@@ -9,19 +9,19 @@ const Footer = () => {
         <div className="w-full max-h-full flex space-x-4 place-content-end ">
           <a
             href="https://www.instagram.com/highlanderstatistics/"
-            className="text-white hover:scale-110"
+            className="text-white hover:scale-110 duration-300"
           >
             {<FaInstagram className="text-2xl" />}{" "}
           </a>
           <a
             href="https://discord.gg/NrsJjtAQAE"
-            className="text-white hover:scale-110"
+            className="text-white hover:scale-110 duration-300"
           >
             {<FaDiscord className="text-2xl" />}
           </a>
           <a
             href="mailto:highlanderstat@ucr.edu"
-            className="text-white hover:scale-110"
+            className="text-white hover:scale-110 duration-300"
           >
             {<IoMail className="text-2xl" />}
           </a>

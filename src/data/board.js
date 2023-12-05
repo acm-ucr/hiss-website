@@ -50,7 +50,7 @@ export const board = [
     name: "Soumya Agarwal",
     position: "Event Coordinator",
     year: "3rd",
-    major: "Business Admin",
+    major: "Business Analytics",
     pronouns: "she/her",
     linkedIn: "http://linkedin.com/in/soumya-agarwal",
     email: "sagar012@ucr.edu",
