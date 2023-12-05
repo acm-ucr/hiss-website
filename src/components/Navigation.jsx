@@ -17,15 +17,15 @@ const Navigation = () => {
       <Navbar.Brand className="p-0">
         <Link className="p-0 no-underline flex items-center gap-2" href="/">
           <div className="flex flex-col items-start">
-            <div className="px-1 text-white text-3xl font-bold">HiSS</div>
+            <div className="px-0 py-3 text-white text-3xl font-bold">HiSS</div>
           </div>
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle
-        className="list-unstyled !text-transparent border-s"
+        className="list-unstyled !text-transparent border-1 mr-0"
         aria-controls="basic-navbar-nav"
       >
-        <FaBars className=" text-hiss-yellow text-xl" />
+        <FaBars className="text-hiss-yellow text-2xl" />
       </Navbar.Toggle>
       <Navbar.Collapse className="items-center justify-end">
         <Nav className="mb-2 w-2/7 no-underline text-2xl flex items-center">
