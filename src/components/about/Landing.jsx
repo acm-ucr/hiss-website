@@ -4,7 +4,6 @@ import Image from "next/image";
 import chart from "../../../public/assets/chart.svg";
 import Button from "../about/Button.jsx";
 import { motion } from "framer-motion";
-
 const transition = {
   type: "tween",
   ease: "easeInOut",
