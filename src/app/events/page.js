@@ -12,10 +12,11 @@ const Home = () => {
       </div>
 
       <div className="flex flex-col justify-center items-center gap-20">
-        <div className="absolute z-2 top-0 scale-125 right-[20%] lg:-translate-y-[-15%] -translate-y-[-80%] translate-x-[80%]">
+        <div className="absolute z-2 top-0 scale-125 right-[20%] lg:-translate-y-[-15%] lg:translate-x-[80%] -translate-y-[-80%] hidden lg:block">
           <Image src={circle} alt="circle" width={900} height={400} />
         </div>
-        <div className="absolute z-2 top-0 scale-125 right-[20%] -translate-y-[-30%] translate-x-[-160%]">
+
+        <div className="absolute z-2 top-0 scale-125 right-[20%] -translate-y-[-30%] translate-x-[-160%] hidden lg:block">
           <Image src={circle} alt="circle" width={900} height={400} />
         </div>
 
