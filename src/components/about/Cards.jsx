@@ -4,11 +4,6 @@ import Card from "./Card";
 import { FaDiscord, FaInstagram, FaEnvelope } from "react-icons/fa";
 import Header from "../Header";
 import { motion } from "framer-motion";
-const transition = {
-  type: "tween",
-  ease: "easeInOut",
-  duration: 1,
-};
 const animation = {
   hidden: { opacity: 0, y: 30 },
   show: {
