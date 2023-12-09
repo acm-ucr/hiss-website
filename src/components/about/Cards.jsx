@@ -5,9 +5,9 @@ import Header from "../Header";
 
 const Cards = () => {
   return (
-    <div className="rounded-xl flex flex-col justify-center items-center p-1 sm:w-full lg:w-10/12 space-y-20">
+    <div className="rounded-xl flex flex-col justify-center items-center p-1 w-7/12 lg:w-10/12 space-y-20">
       <Header text={"Join Us"} />
-      <div className="flex flex-row items-center justify-center space-x-3 md:space-x-10 w-full">
+      <div className="flex flex-col md:flex-row items-center justify-center w-full gap-3">
         <Card
           text={"Discord"}
           link={"https://discord.gg/NrsJjtAQAE"}

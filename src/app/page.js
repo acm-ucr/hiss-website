@@ -4,7 +4,7 @@ import Cards from "@/components/about/Cards";
 import Events from "@/components/Events";
 const Home = () => {
   return (
-    <div className="w-full overflow-clip flex flex-col justify-center items-center gap-20">
+    <div className="w-full overflow-clip flex flex-col justify-center items-center gap-10">
       <CircleLanding />
       <HiSS />
       <Cards />
