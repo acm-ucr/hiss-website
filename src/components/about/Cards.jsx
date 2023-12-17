@@ -4,6 +4,7 @@ import Card from "./Card";
 import { FaDiscord, FaInstagram, FaEnvelope } from "react-icons/fa";
 import Header from "../Header";
 import { motion } from "framer-motion";
+
 const animation = {
   hidden: { opacity: 0, y: 30 },
   show: {
@@ -14,7 +15,7 @@ const animation = {
 
 const Cards = () => {
   return (
-    <div className="rounded-xl flex flex-col justify-center items-center p-1 sm:w-full lg:w-10/12 space-y-20">
+    <div className="rounded-xl flex flex-col justify-center items-center p-1 w-7/12 lg:w-10/12 space-y-20 mb-6">
       <motion.div
         variants={animation}
         transition={{ delay: 0.3 }}
@@ -24,12 +25,13 @@ const Cards = () => {
         <Header text={"Join Us"} />
       </motion.div>
 
-      <div className="flex flex-row items-center justify-center space-x-3 md:space-x-10 w-full">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-3 w-full">
         <motion.div
           variants={animation}
           transition={{ delay: 0.5 }}
           initial="hidden"
           whileInView="show"
+          className="w-full flex flex-row justify-end"
         >
           <Card
             text={"Discord"}
@@ -42,6 +44,7 @@ const Cards = () => {
           transition={{ delay: 0.7 }}
           initial="hidden"
           whileInView="show"
+          className="w-full flex flex-row justify-center"
         >
           <Card
             text={"Instagram"}
@@ -54,6 +57,7 @@ const Cards = () => {
           transition={{ delay: 0.9 }}
           initial="hidden"
           whileInView="show"
+          className="w-full flex flex-row justify-start"
         >
           <Card
             text={"Email"}

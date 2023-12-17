@@ -12,6 +12,8 @@ const Footer = () => {
           <a
             href="https://www.instagram.com/highlanderstatistics/"
             className="text-white hover:scale-110 duration-300"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             {<FaInstagram className="text-2xl" />}{" "}
           </a>
@@ -19,6 +21,8 @@ const Footer = () => {
           <a
             href="https://discord.gg/NrsJjtAQAE"
             className="text-white hover:scale-110 duration-300"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             {<FaDiscord className="text-2xl" />}
           </a>
@@ -26,6 +30,8 @@ const Footer = () => {
           <a
             href="mailto:highlanderstat@ucr.edu"
             className="text-white hover:scale-110 duration-300"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             {<IoMail className="text-2xl" />}
           </a>
@@ -33,6 +39,8 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/company/highlander-statistics-society"
             className="text-white hover:scale-110 duration-300"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             {<FaLinkedin className="text-2xl" />}
           </a>

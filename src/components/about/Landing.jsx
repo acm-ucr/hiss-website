@@ -19,8 +19,8 @@ const animation = {
 
 const Landing = () => {
   return (
-    <div className="absolute top-0 min-h-full flex flex-col justify-center items-center w-full">
-      <div className="flex lg:flex-row flex-col justify-center items-center lg:w-5/6 ">
+    <div className="absolute top-0 min-h-full xl:min-h-[80%] flex flex-col justify-center items-center w-full">
+      <div className="flex lg:flex-row flex-col justify-center items-center lg:w-5/6">
         <motion.div
           variants={animation}
           transition={{ delay: 0.3 }}
@@ -68,7 +68,11 @@ const Landing = () => {
         initial="hidden"
         whileInView="show"
       >
-        <Button text="JOIN US" link="https://discord.gg/NrsJjtAQAE" />
+        <Button
+          text="JOIN US"
+          link="https://discord.gg/NrsJjtAQAE"
+          target={"_blank"}
+        />
       </motion.div>
     </div>
   );

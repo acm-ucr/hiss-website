@@ -5,14 +5,16 @@ import HiSS from "./HiSS";
 
 const CircleHiss = () => {
   return (
-    <div className="w-full relative flex flex-col justify-center items-center">
+    <div className="w-full relative flex flex-row justify-center items-center">
+      <Image
+        src={circle}
+        className="hidden xl:block -left-[30%] absolute scale-150"
+      />
       <HiSS />
-      <div className="absolute xl:translate-y-[15%] -right-[45%] scale-0 md:scale-150">
-        <Image src={circle} alt="landing" width={800} height={800} />
-      </div>
-      <div className="absolute xl:translate-y-[15%] -left-[45%] scale-0 md:scale-150">
-        <Image src={circle} alt="landing" width={800} height={800} />
-      </div>
+      <Image
+        src={circle}
+        className="hidden xl:block -right-[30%] absolute scale-150"
+      />
     </div>
   );
 };

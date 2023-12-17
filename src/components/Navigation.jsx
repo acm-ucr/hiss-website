@@ -35,7 +35,7 @@ const Navigation = () => {
               key={index}
               href={item.link}
               pathname={item.name}
-              className="hover:cursor-pointer mt-3 py-1 px-3 !text-white whitespace-nowrap relative group duration-300 "
+              className="hover:cursor-pointer mt-3 py-1 px-3 !text-white whitespace-nowrap relative group duration-300"
             >
               {item.name}
               <div className="flex flex-col items-center">
@@ -46,9 +46,13 @@ const Navigation = () => {
           <Nav.Link
             href="https://discord.gg/NrsJjtAQAE"
             as={Link}
-            className="mt-2.5 mr-2 py-1 px-2 !text-white !text-2xl !font-bold drop-shadow-md"
+            target="_blank"
+            className="hover:cursor-pointer mt-3 py-1 px-3 !font-bold !text-white whitespace-nowrap relative group duration-300"
           >
             JOIN
+            <div className="flex flex-col items-center">
+              <span className="h-1 rounded-full bg-hiss-yellow transform origin-left hover:w-8"></span>
+            </div>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
