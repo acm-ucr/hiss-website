@@ -4,11 +4,7 @@ import Header from "../Header.jsx";
 import Image from "next/image";
 import About from "../../../public/images/about.webp";
 import { motion } from "framer-motion";
-const transition = {
-  type: "tween",
-  ease: "easeInOut",
-  duration: 1,
-};
+
 const animation = {
   hidden: { opacity: 0, y: 30 },
   show: {
@@ -21,7 +17,7 @@ const HiSS = () => {
   return (
     <div className="flex-col items-center justify-center inline-flex gap-10 sm:w-2/3 lg:w-1/2 w-5/6 sm:text-xl text-base ">
       <motion.div
-        variants={transition}
+        variants={animation}
         transition={{ delay: 0.3 }}
         initial="hidden"
         whileInView="show"
