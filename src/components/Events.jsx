@@ -4,11 +4,7 @@ import Event from "../components/Event.jsx";
 import eventsData from "../data/events.js";
 import Button from "./about/Button.jsx";
 import { motion } from "framer-motion";
-const transition = {
-  type: "tween",
-  ease: "easeInOut",
-  duration: 1,
-};
+
 const animation = {
   hidden: { opacity: 0, y: 30 },
   show: {
@@ -21,7 +17,7 @@ const Events = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full mt-6">
       <motion.div
-        variants={transition}
+        variants={animation}
         transition={{ delay: 0.3 }}
         initial="hidden"
         whileInView="show"
