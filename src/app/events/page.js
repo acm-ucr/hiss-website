@@ -2,6 +2,7 @@ import Title from "@/components/Title";
 import Events from "@/components/Events";
 import Calendar from "@/components/calendar/Calendar";
 import Image from "next/image";
+import circle from "../../../public/assets/circle.svg";
 
 const Home = () => {
   return (
