@@ -26,9 +26,7 @@ const CustomToolbar = ({ onNavigate, date }) => {
       <Row className="w-10/12 md:w-3/4 m-0 p-0 flex justify-center md:justify-end justify-items-center items-center">
         {filters.map((filter, index) => (
           <Col key={index} xs={9} sm={3} className="p-1 ">
-            <p
-              className={`${filter.styles} whitespace-nowrap text-center text-sm md:text-base rounded-sm m-1 py-1 h-9`}
-            >
+            <p className="bg-hiss-yellow text-white whitespace-nowrap text-center text-sm md:text-base rounded-sm m-1 py-1 h-9">
               {filter.topic}
             </p>
           </Col>
