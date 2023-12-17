@@ -30,7 +30,6 @@ const CalendarEvent = () => {
         setEvents(items);
       });
   }, []);
-  console.log(events);
   return (
     events && (
       <section className="w-full flex justify-center items-center flex-col mt-[2vh] ">
