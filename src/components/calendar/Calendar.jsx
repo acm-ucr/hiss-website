@@ -8,21 +8,25 @@ import CustomEvent from "./CustomEvents.jsx";
 import CustomHeader from "./CustomHeader.jsx";
 import Modal from "./Modal.jsx";
 import axios from "axios";
+
 const localizer = momentLocalizer(moment);
 
 const CalendarEvent = () => {
   const [event, setEvent] = useState(null);
   const [events, setEvents] = useState(null);
   const [date, setDate] = useState(new Date());
-  const size = 10;
 
   useEffect(() => {
-    const startDate = moment().subtract(10, "weeks").toISOString();
-    const endDate = moment().add(10, "weeks").toISOString();
-
     axios
       .get(
-        `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=starttime&timeMin=${startDate}&timeMax=${endDate}&maxResults=${size}`
+        `https://www.googleapis.com/calendar/v3/calendars/${
+          process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL
+        }/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}
+      &singleEvents=true&orderBy=startTime&timeMin=${new Date(
+        new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000
+      ).toISOString()}&timeMax=${new Date(
+          new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
+        ).toISOString()}`
       )
 
       .then((response) => {
@@ -34,7 +38,7 @@ const CalendarEvent = () => {
         });
         setEvents(items);
       });
-  }, [size]);
+  }, []);
 
   return (
     events && (
