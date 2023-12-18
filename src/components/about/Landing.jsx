@@ -19,20 +19,20 @@ const animation = {
 
 const Landing = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-[90vh] lg:h-[80vh] w-full">
-      <div className="h-auto flex lg:flex-row flex-col gap-8 justify-center items-center lg:w-5/6 ">
+    <div className="absolute top-0 min-h-full xl:min-h-[80%] flex flex-col justify-center items-center w-full">
+      <div className="flex lg:flex-row flex-col justify-center items-center lg:w-5/6">
         <motion.div
           variants={animation}
           transition={{ delay: 0.3 }}
           initial="hidden"
           whileInView="show"
-          className="w-1/2 md:w-1/3 lg:w-1/4 2xl:w-1/5"
+          className="w-1/5 lg:w-1/4 2xl:w-1/5 mr-8"
         >
           <Image src={chart} alt="chart" />
         </motion.div>
-        <div className="flex flex-col w-3/4 2xl:w-1/2 items-center lg:items-start gap-2 lg:gap-0">
+        <div className="flex flex-col w-fit items-center lg:items-start gap-2 lg:gap-0 lg:w-1/2 2xl:w-3/5">
           <motion.p
-            className="text-5xl !text-center lg:!text-left py-1.5 font-bold text-transparent bg-clip-text bg-gradient-to-r from-hiss-blue to-hiss-purple animate-fade-up animate-delay-[500ms"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl' text-center whitespace-nowrap py-1.5 font-bold text-transparent bg-clip-text bg-gradient-to-r from-hiss-blue to-hiss-purple"
             variants={animation}
             transition={{ ...transition, delay: 0.3 }}
             initial="hidden"
@@ -41,7 +41,7 @@ const Landing = () => {
             Highlander Statistics Society
           </motion.p>
           <motion.p
-            className=" text-white lg:px-4 py-2.5 px-2.5 font-bold text-center text-md md:text-2xl w-fit bg-gradient-to-r from-hiss-blue to-hiss-purple rounded-full"
+            className=" text-white lg:px-4 2xl:text-3xl py-2.5 px-2.5 font-bold text-center text-md md:text-2xl w-fit bg-gradient-to-r from-hiss-blue to-hiss-purple rounded-full whitespace-nowrap"
             variants={animation}
             transition={{ ...transition, delay: 0.6 }}
             initial="hidden"
@@ -50,7 +50,7 @@ const Landing = () => {
             at University of California Riverside
           </motion.p>
           <motion.p
-            className="lg:my-1 py-1 lg:w-2/3 lg:!text-left text-base md:text-xl !text-center"
+            className="lg:my-1 py-1 w-10/12 lg:w-2/3 lg:!text-left text-sm md:text-xl !text-center"
             variants={animation}
             transition={{ ...transition, delay: 0.9 }}
             initial="hidden"
@@ -68,7 +68,11 @@ const Landing = () => {
         initial="hidden"
         whileInView="show"
       >
-        <Button text={"JOIN US"} link={"https://discord.gg/NrsJjtAQAE"} />
+        <Button
+          text="JOIN US"
+          link="https://discord.gg/NrsJjtAQAE"
+          target={"_blank"}
+        />
       </motion.div>
     </div>
   );

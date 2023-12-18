@@ -1,6 +1,8 @@
 import React from "react";
 import { FaInstagram, FaDiscord } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
+import { FaLinkedin } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <div className="bg-gradient-to-r from-hiss-blue to-hiss-purple w-full p-4">
@@ -10,20 +12,37 @@ const Footer = () => {
           <a
             href="https://www.instagram.com/highlanderstatistics/"
             className="text-white hover:scale-110 duration-300"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             {<FaInstagram className="text-2xl" />}{" "}
           </a>
+
           <a
             href="https://discord.gg/NrsJjtAQAE"
             className="text-white hover:scale-110 duration-300"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             {<FaDiscord className="text-2xl" />}
           </a>
+
           <a
             href="mailto:highlanderstat@ucr.edu"
             className="text-white hover:scale-110 duration-300"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             {<IoMail className="text-2xl" />}
+          </a>
+
+          <a
+            href="https://www.linkedin.com/company/highlander-statistics-society"
+            className="text-white hover:scale-110 duration-300"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {<FaLinkedin className="text-2xl" />}
           </a>
         </div>
       </div>
