@@ -14,12 +14,17 @@ const CalendarEvent = () => {
   const [event, setEvent] = useState(null);
   const [events, setEvents] = useState(null);
   const [date, setDate] = useState(new Date());
+  const size = 10;
 
   useEffect(() => {
+    const startDate = moment().subtract(10, "weeks").toISOString();
+    const endDate = moment().add(10, "weeks").toISOString();
+
     axios
       .get(
-        `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`
+        `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=starttime&timeMin=${startDate}&timeMax=${endDate}&maxResults=${size}`
       )
+
       .then((response) => {
         const items = response.data.items.map((item) => {
           item.start = new Date(item.start.dateTime);
@@ -29,7 +34,8 @@ const CalendarEvent = () => {
         });
         setEvents(items);
       });
-  }, []);
+  }, [size]);
+
   return (
     events && (
       <section className="w-full flex justify-center items-center flex-col mt-[2vh] ">
