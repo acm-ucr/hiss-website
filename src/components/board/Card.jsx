@@ -33,7 +33,7 @@ const Card = ({
           <FaLinkedinIn className="inline h-6 w-6 ml-2 mb-1 text-hiss-purple hover:scale-110 duration-200" />
         </Link>
 
-        <Link href={`mailto:${email}`} target="_blank">
+        <Link href={email} target="_blank">
           <GrMail className="inline h-6 w-6 ml-2 mb-1 rounded-xl text-hiss-purple hover:scale-110 duration-200" />
         </Link>
 
