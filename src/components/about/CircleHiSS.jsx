@@ -8,12 +8,12 @@ const CircleHiss = () => {
     <div className="w-full relative flex flex-row justify-center items-center">
       <Image
         src={circle}
-        className="hidden xl:block -left-[30%] absolute scale-150"
+        className="hidden xl:block -left-[30%] 2xl:-left-[15%] absolute scale-150"
       />
       <HiSS />
       <Image
         src={circle}
-        className="hidden xl:block -right-[30%] absolute scale-150"
+        className="hidden xl:block -right-[30%] 2xl:-right-[15%] absolute scale-150"
       />
     </div>
   );
