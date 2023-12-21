@@ -7,7 +7,7 @@ import CustomToolbar from "./CustomToolbar.jsx";
 import CustomEvent from "./CustomEvents.jsx";
 import CustomHeader from "./CustomHeader.jsx";
 import Modal from "./Modal.jsx";
-import axios from "axios";
+import { motion } from "framer-motion";
 
 const localizer = momentLocalizer(moment);
 
@@ -16,34 +16,55 @@ const CalendarEvent = () => {
   const [events, setEvents] = useState(null);
   const [date, setDate] = useState(new Date());
 
-  useEffect(() => {
-    axios
-      .get(
-        `https://www.googleapis.com/calendar/v3/calendars/${
-          process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL
-        }/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}
-      &singleEvents=true&orderBy=startTime&timeMin=${new Date(
-        new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000
-      ).toISOString()}&timeMax=${new Date(
-          new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
-        ).toISOString()}`
-      )
+  const animation = {
+    hidden: { opacity: 0, y: 30 },
+    show: {
+      opacity: 1,
+      y: 0,
+    },
+  };
 
-      .then((response) => {
-        const items = response.data.items.map((item) => {
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          `https://www.googleapis.com/calendar/v3/calendars/${
+            process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL
+          }/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}
+          &singleEvents=true&orderBy=startTime&timeMin=${new Date(
+            new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000
+          ).toISOString()}&timeMax=${new Date(
+            new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
+          ).toISOString()}`
+        );
+
+        const data = await response.json();
+        const items = data.items.map((item) => {
           item.start = new Date(item.start.dateTime);
           item.end = new Date(item.end.dateTime);
           item.hidden = false;
           return item;
         });
+
         setEvents(items);
-      });
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   return (
     events && (
-      <section className="w-full flex justify-center items-center flex-col mt-[2vh] ">
-        <div className="w-10/12 flex justify-center items-center">
+      <section className="w-full flex justify-center items-center flex-col mt-[2vh]">
+        <motion.div
+          className="w-10/12 flex justify-center items-center"
+          variants={animation}
+          transition={{ delay: 0.2 }}
+          initial="hidden"
+          whileInView="show"
+        >
           <div className="h-[90vh] w-full relative mb-24 ">
             <Calendar
               date={date}
@@ -85,7 +106,7 @@ const CalendarEvent = () => {
             />
           </div>
           {event && <Modal event={event} setEvent={setEvent} />}
-        </div>
+        </motion.div>
       </section>
     )
   );
