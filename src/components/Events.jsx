@@ -46,7 +46,6 @@ const Events = ({ button = true }) => {
 
     fetchData();
   }, []);
-
   return (
     <div className="flex flex-col items-center justify-center w-full my-5">
       <motion.div
@@ -64,11 +63,10 @@ const Events = ({ button = true }) => {
         initial="hidden"
         whileInView="show"
       >
-        {events !== null &&
+        {events !== null && events.length > 0 ? (
           events
             .sort((a, b) => a.start - b.start)
             .slice(-4, -1)
-            .reverse()
             .map((event) => (
               <Event
                 key={event.id}
@@ -89,7 +87,12 @@ const Events = ({ button = true }) => {
                 description={event.description}
                 color={event.color}
               />
-            ))}
+            ))
+        ) : (
+          <p className="text-lg w-full text-center font-bold text-black mt-5">
+            no upcoming events
+          </p>
+        )}
       </motion.div>
       {button && (
         <motion.div
