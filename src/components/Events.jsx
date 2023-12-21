@@ -29,12 +29,18 @@ const Events = ({ button = true }) => {
             new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
           ).toISOString()}`
         );
-
+        const offset = new Date().getTimezoneOffset() * 60000;
         const data = await response.json();
         const items = data.items.map((item) => {
-          item.start = new Date(item.start.dateTime);
-          item.end = new Date(item.end.dateTime);
-          item.hidden = false;
+          item.allDay = !item.start.dateTime;
+          (item.start = item.start.dateTime
+            ? new Date(item.start.dateTime)
+            : new Date(new Date(item.start.date).getTime() + offset)),
+            (item.end = new Date(
+              item.end.dateTime || new Date(item.end.date).getTime() + offset
+            )),
+            (item.hidden = false);
+
           return item;
         });
 
@@ -46,6 +52,7 @@ const Events = ({ button = true }) => {
 
     fetchData();
   }, []);
+
   return (
     <div className="flex flex-col items-center justify-center w-full my-5">
       <motion.div
@@ -66,28 +73,41 @@ const Events = ({ button = true }) => {
         {events !== null && events.length > 0 ? (
           events
             .sort((a, b) => a.start - b.start)
-            .slice(-4, -1)
-            .map((event) => (
-              <Event
-                key={event.id}
-                month={event.start
-                  .toLocaleString("default", { month: "short" })
-                  .toUpperCase()}
-                day={event.start.getDate()}
-                time={`${
+            .filter((event) => event.start > new Date())
+            .slice(0, 3)
+            .map((event) => {
+              let formattedString = "";
+              if (event.allDay) {
+                formattedString = "All Day";
+              } else {
+                const hours =
                   event.start.getHours() > 12
                     ? event.start.getHours() - 12
-                    : event.start.getHours()
-                }:${event.start.getMinutes().toString().padStart(2, "0")} ${
-                  event.start.getHours() >= 12 ? "PM" : "AM"
-                }`}
-                summary={event.summary}
-                location={event.location}
-                link={event.link}
-                description={event.description}
-                color={event.color}
-              />
-            ))
+                    : event.start.getHours();
+                const minutes = event.start
+                  .getMinutes()
+                  .toString()
+                  .padStart(2, "0");
+                const period = event.start.getHours() >= 12 ? "PM" : "AM";
+                formattedString = `${hours}:${minutes} ${period}`;
+              }
+
+              return (
+                <Event
+                  key={event.id}
+                  month={event.start
+                    .toLocaleString("default", { month: "short" })
+                    .toUpperCase()}
+                  day={event.start.getDate()}
+                  time={formattedString}
+                  summary={event.summary}
+                  location={event.location}
+                  link={event.link}
+                  description={event.description}
+                  color={event.color}
+                />
+              );
+            })
         ) : (
           <p className="text-lg w-full text-center font-bold text-black mt-5">
             no upcoming events

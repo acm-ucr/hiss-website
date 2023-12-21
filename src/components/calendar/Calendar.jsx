@@ -38,14 +38,20 @@ const CalendarEvent = () => {
           ).toISOString()}`
         );
 
+        const offset = new Date().getTimezoneOffset() * 60000;
         const data = await response.json();
         const items = data.items.map((item) => {
-          item.start = new Date(item.start.dateTime);
-          item.end = new Date(item.end.dateTime);
-          item.hidden = false;
+          item.allDay = !item.start.dateTime;
+          (item.start = item.start.dateTime
+            ? new Date(item.start.dateTime)
+            : new Date(new Date(item.start.date).getTime() + offset)),
+            (item.end = new Date(
+              item.end.dateTime || new Date(item.end.date).getTime() + offset
+            )),
+            (item.hidden = false);
+
           return item;
         });
-
         setEvents(items);
       } catch (error) {
         console.error("Error fetching data: ", error);
