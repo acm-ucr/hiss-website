@@ -8,14 +8,14 @@ const Home = () => {
   return (
     <div className="overflow-clip">
       <Title title={"Events"} />
-      <div className="flex flex-col justify-center items-center relative">
+      <div className="flex flex-col justify-center items-center gap-20 relative">
         <div className="flex flex-row">
           <Image
             src={circle}
             className="hidden md:block absolute z-0 lg:scale-150 -left-[20%] bottom-0"
           />
           <div className="relative z-1">
-            <Events button={false} />
+            <Events />
           </div>
           <Image
             src={circle}

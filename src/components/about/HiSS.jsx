@@ -18,7 +18,7 @@ const HiSS = () => {
     <div className="flex-col items-center justify-center inline-flex gap-10 sm:w-2/3 lg:w-1/2 w-5/6 sm:text-xl text-base ">
       <motion.div
         variants={animation}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.3 }}
         initial="hidden"
         whileInView="show"
       >
@@ -26,7 +26,7 @@ const HiSS = () => {
       </motion.div>
       <motion.p
         variants={animation}
-        transition={{ delay: 0.4 }}
+        transition={{ delay: 0.5 }}
         initial="hidden"
         whileInView="show"
       >
@@ -40,7 +40,7 @@ const HiSS = () => {
       </motion.p>
       <motion.div
         variants={animation}
-        transition={{ delay: 0.6 }}
+        transition={{ delay: 0.7 }}
         initial="hidden"
         whileInView="show"
         className="flex justify-center"
@@ -49,7 +49,7 @@ const HiSS = () => {
       </motion.div>
       <motion.p
         variants={animation}
-        transition={{ delay: 0.8 }}
+        transition={{ delay: 0.9 }}
         initial="hidden"
         whileInView="show"
       >
