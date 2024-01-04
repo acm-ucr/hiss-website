@@ -10,7 +10,10 @@ const NotFound = () => {
         404{" "}
       </p>
 
-      <p className=" text-hiss-blue text-center text-3xl"> Page Not Found </p>
+      <p className=" text-hiss-blue text-center text-3xl mb-2">
+        {" "}
+        Page Not Found{" "}
+      </p>
 
       <Button text={"Back To Home Page"} link={"/"} />
     </div>
