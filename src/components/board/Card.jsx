@@ -19,7 +19,8 @@ const Card = ({
       <Image
         src={image}
         alt="Picture of the HiSS Board Member"
-        className="w-full rounded-2xl object-cover aspect-square"
+        className="w-full rounded-2xl object-cover aspect-square
+        "
       />
 
       <div>
@@ -27,7 +28,7 @@ const Card = ({
           {name}
         </div>
 
-        <div className="-mt-0 text-xl font-light">{position}</div>
+        <div className="text-xl font-light">{position}</div>
 
         <Link href={linkedIn} target="_blank">
           <FaLinkedinIn className="inline h-6 w-6 ml-2 mb-1 text-hiss-purple hover:scale-110 duration-200" />
