@@ -19,7 +19,7 @@ const Cards = () => {
     <div className="rounded-xl flex flex-col justify-center items-center p-1 w-7/12 lg:w-10/12 2xl:w-7/12 space-y-20 mb-6">
       <motion.div
         variants={animation}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.3 }}
         initial="hidden"
         whileInView="show"
       >
@@ -29,7 +29,7 @@ const Cards = () => {
       <div className="flex flex-col md:flex-row md:grid md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-4 w-full">
         <motion.div
           variants={animation}
-          transition={{ delay: 0.3 }}
+          transition={{ delay: 0.4 }}
           initial="hidden"
           whileInView="show"
           className="w-full flex flex-row justify-center"
@@ -42,7 +42,7 @@ const Cards = () => {
         </motion.div>
         <motion.div
           variants={animation}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 0.6 }}
           initial="hidden"
           whileInView="show"
           className="w-full flex flex-row justify-center"
@@ -55,7 +55,7 @@ const Cards = () => {
         </motion.div>
         <motion.div
           variants={animation}
-          transition={{ delay: 0.7 }}
+          transition={{ delay: 0.8 }}
           initial="hidden"
           whileInView="show"
           className="w-full flex flex-row justify-center"
