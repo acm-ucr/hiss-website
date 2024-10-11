@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import logo from "../../../public/images/logo.png";
+import logo from "../../../public/images/logo.webp";
 import Button from "../about/Button.jsx";
 import { motion } from "framer-motion";
 const transition = {

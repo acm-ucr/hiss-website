@@ -1,9 +1,9 @@
-import SoumyaAgarwal from "../../public/images/board/SoumyaAgarwal.jpg";
-import WasimKhan from "../../public/images/board/WasimKhan.jpg";
-import AaronLin from "../../public/images/board/AaronLin.jpg";
-import KhushiChaudhari from "../../public/images/board/KhushiChaudhari.jpg";
-import JakeKim from "../../public/images/board/JakeKim.png";
-import AdhvaitPurayil from "../../public/images/board/AdhvaitPurayil.png";
+import SoumyaAgarwal from "../../public/images/board/SoumyaAgarwal.webp";
+import WasimKhan from "../../public/images/board/WasimKhan.webp";
+import AaronLin from "../../public/images/board/AaronLin.webp";
+import KhushiChaudhari from "../../public/images/board/KhushiChaudhari.webp";
+import JakeKim from "../../public/images/board/JakeKim.webp";
+import AdhvaitPurayil from "../../public/images/board/AdhvaitPurayil.webp";
 
 export const board = [
   {
