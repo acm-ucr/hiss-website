@@ -15,11 +15,12 @@ const Card = ({
   image,
 }) => {
   return (
-    <div className="font-poppins m-4 p-4 bg-white w-64 h-96 rounded-3xl shadow flex flex-col items-start justify-center">
+    <div className="font-poppins m-4 p-3 bg-white w-64 rounded-3xl shadow flex flex-col items-start justify-center">
       <Image
         src={image}
         alt="Picture of the HiSS Board Member"
-        className="w-full rounded-2xl object-cover"
+        className="w-full rounded-2xl object-cover aspect-square
+        "
       />
 
       <div>
@@ -27,13 +28,13 @@ const Card = ({
           {name}
         </div>
 
-        <div className="-mt-0 text-xl font-light">{position}</div>
+        <div className="text-xl font-light">{position}</div>
 
         <Link href={linkedIn} target="_blank">
           <FaLinkedinIn className="inline h-6 w-6 ml-2 mb-1 text-hiss-purple hover:scale-110 duration-200" />
         </Link>
 
-        <Link href={`mailto:${email}`} target="_blank">
+        <Link href={email} target="_blank">
           <GrMail className="inline h-6 w-6 ml-2 mb-1 rounded-xl text-hiss-purple hover:scale-110 duration-200" />
         </Link>
 

@@ -1,69 +1,69 @@
-import Surahbi from "../../public/images/board/Surabhi_Tadvalkar.webp";
-import David from "../../public/images/board/David_Ryan.webp";
-import Zaif from "../../public/images/board/Zaif_Chowdhury.webp";
-import Aaron from "../../public/images/board/Aaron_Lin.webp";
-import Soumya from "../../public/images/board/Soumya_Agarwal.webp";
-import Ethan from "../../public/images/board/Ethan_Tran.webp";
+import SoumyaAgarwal from "../../public/images/board/SoumyaAgarwal.webp";
+import WasimKhan from "../../public/images/board/WasimKhan.webp";
+import AaronLin from "../../public/images/board/AaronLin.webp";
+import KhushiChaudhari from "../../public/images/board/KhushiChaudhari.webp";
+import JakeKim from "../../public/images/board/JakeKim.webp";
+import AdhvaitPurayil from "../../public/images/board/AdhvaitPurayil.webp";
 
 export const board = [
   {
-    name: "Surabhi Tadvalkar",
-    position: "President",
+    name: "Soumya Agarwal",
+    position: "Co-President",
     year: "4th",
-    major: "Data Science",
+    major: "Business Analytics",
     pronouns: "she/her",
-    linkedIn: "https://www.linkedin.com/in/surabhi-t-42b439205",
-    email: "stadv001@ucr.edu",
-    image: Surahbi,
+    linkedIn: "https://www.linkedin.com/in/soumya-agarwal/",
+    email: "mailto:sagar012@ucr.edu",
+    image: SoumyaAgarwal,
   },
   {
-    name: "David Ryan",
-    position: "Vice-President",
-    year: "4th",
+    name: "Wasim Khan",
+    position: "Co-President",
+    year: "3th",
     major: "Data Science",
     pronouns: "he/him",
-    linkedIn: "https://www.linkedin.com/in/david-michael-ryan",
-    email: "dryan011@ucr.edu",
-    image: David,
-  },
-  {
-    name: "Zaif Chowdhury",
-    position: "Vice-President",
-    year: "2nd",
-    major: "Data Science",
-    pronouns: "he/him",
-    linkedIn: "https://www.linkedin.com/in/zaifc",
-    email: "zchow007@ucr.edu",
-    image: Zaif,
+    linkedIn: "https://www.linkedin.com/in/wasimkhan034/",
+    email: "mailto:wkhan010@ucr.edu",
+    image: WasimKhan,
   },
   {
     name: "Aaron Lin",
-    position: "Treasurer",
-    year: "2nd",
+    position: "Vice-President",
+    year: "3nd",
     major: "Data Science",
     pronouns: "he/him",
-    linkedIn: "https://www.linkedin.com/in/aaron-lin-310a23250/",
-    email: "alin166@ucr.edu",
-    image: Aaron,
+    linkedIn: "https://www.linkedin.com/in/aaronlin-",
+    email: "mailto:alin166@ucr.edu",
+    image: AaronLin,
   },
   {
-    name: "Soumya Agarwal",
-    position: "Event Coordinator",
-    year: "3rd",
-    major: "Business Analytics",
+    name: "Khushi Chaudhari",
+    position: "Treasurer Fundraising Coordinator",
+    year: "3nd",
+    major: "Data Science",
     pronouns: "she/her",
-    linkedIn: "http://linkedin.com/in/soumya-agarwal",
-    email: "sagar012@ucr.edu",
-    image: Soumya,
+    linkedIn: "https://www.linkedin.com/in/khushi-chaudhari33/",
+    email: "mailto:khushi.chaudhari@gmail.com",
+    image: KhushiChaudhari,
   },
   {
-    name: "Ethan Tran",
-    position: "Project Director",
-    year: "2nd",
+    name: "Jake Kim",
+    position: "Social Media / Outreach Coordinator",
+    year: "3rd",
     major: "Data Science",
     pronouns: "he/him",
-    linkedIn: "https://www.linkedin.com/in/ethan-tran-620668253/",
-    email: "etran124@ucr.edu",
-    image: Ethan,
+    linkedIn: "https://www.linkedin.com/in/jake-kim-008805261/",
+    email: "mailto:jkim1369@ucr.edu",
+    image: JakeKim,
+  },
+  {
+    name: "Adhvait Purayil",
+    position: "Event Coordinator",
+    year: "3nd",
+    major: "Data Science",
+    pronouns: "he/him",
+    linkedIn: "https://www.linkedin.com/in/adhvait-purayil-ab9522262",
+    email: "mailto:apura001@ucr.edu",
+    image: AdhvaitPurayil,
   },
 ];
